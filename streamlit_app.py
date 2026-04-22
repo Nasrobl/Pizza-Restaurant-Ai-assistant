@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 import json
 
-st.title("🍕 Restaurant Review AI Chat")
+st.title("🍕 Restaurant AI Chat")
 
 st.write("Chat with our AI about pizza restaurants!")
 
@@ -52,4 +52,4 @@ if prompt := st.chat_input("Ask about pizza restaurants..."):
                 st.session_state.messages.append({"role": "assistant", "content": error_msg})
 
 st.write("---")
-st.write("Powered by FastAPI backend with LangChain and Ollama.")
+st.write("Powered by FastAPI with LangChain and Ollama.")
